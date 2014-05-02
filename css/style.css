@@ -1,0 +1,441 @@
+/* RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+.contact {
+  display: none;
+  padding: 10px;
+  margin-bottom: 5px;
+
+  text-align: center;
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  text-decoration: none;
+
+}
+
+.contact a{
+  text-decoration: none;
+  color: white;
+}
+
+.name {
+  float: left;
+  padding-left: 10px;
+
+
+}
+.friend .distance{
+  text-align: right;
+
+}
+
+.friends {
+  margin: 0 auto;
+  width: 80%;
+  top: 165px;
+  position: relative;
+
+}
+
+.friend {
+  font-size: 30px;
+  padding: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  text-align: center;
+  color: white;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+
+}
+
+.errorMessage {
+  box-shadow: 1px 1px 1px #3D3D3D;
+  background: red; /* Old browsers */
+  font-size: 30px;
+  padding:10px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  z-index: 5;
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin: auto;
+  left: 10%;
+  width: 80%;
+}
+
+.errorOverlay {
+  display: none;
+  background: black;
+  opacity: 0.5;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;  
+}
+#logout-form {
+  z-index: 3;
+}
+body{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.friend img{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-top: -5px;
+  margin-left: -5px;
+
+  -webkit-box-shadow: 0 1px 3px #afafaf;
+  -moz-box-shadow: 0 1px 3px #afafaf;
+  -ms-box-shadow: 0 1px 3px #afafaf;
+  box-shadow: 0 1px 3px #afafaf;
+  border: 1px white solid;
+
+}
+.option-content{
+  display: none;
+
+  width: 80%;
+  top: 30%;
+  position: fixed;
+  margin: auto;
+  left: 10%;
+
+
+}
+.options{
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  position: fixed;
+
+  animation: options_init 5s;
+  -webkit-animation: options_init 5s;
+}
+
+.option{
+
+  font-size: 40px;
+
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  width: 100%
+}
+
+
+.pic-form p{
+  font-size: 25px;
+  font-family: helvetica;
+}
+.option h1{
+  font-size: 40px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 100;
+}
+.process{
+  display: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+input{
+  border: 1px solid;
+  border-color: #eee;
+  font-size: 25px;
+  text-align: left;
+  font-family: helvetica;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  color: #3B8787;
+}
+input[type="submit"] {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+
+}
+
+
+input[type="file"] {
+  border: none;
+  margin-top: 10px;
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+  top: -36px;
+}
+.register{
+
+
+}
+.completeContainer {
+
+  box-shadow: 1px 1px 1px #3D3D3D;
+  background: green; /* Old browsers */
+  font-size: 30px;
+  padding:10px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  z-index: 5;
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin: auto;
+  left: 10%;
+  width: 80%;
+}
+
+.nearbyInit{
+  animation: nearby_init 5s;
+  -webkit-animation: nearby_init 5s;
+  position: absolute;
+  width: 100%;
+  text-align:center;
+  top: 2%;
+  z-index:-1;
+
+}
+
+.nearbyInit img{
+  width: 150px;
+}
+
+@keyframes nearby_init
+{
+  0%   {top: 50%;}
+  50% {top:24%;}
+  100% {top: 2%;}
+}
+
+@-webkit-keyframes nearby_init /* Safari and Chrome */
+{
+  0%   {top: 50%;}
+  50% {top:2%;}
+  100% {top: 2%;}
+
+}
+
+
+@keyframes options_init
+{
+  0%   {opacity: 0;}
+  25%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes options_init /* Safari and Chrome */
+{
+  0%   {opacity: 0;}
+  25%   {opacity: 0;}
+  100% {opacity: 1;}
+
+}
+body{
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    color-stop(0.11, #CED0BF),
+    color-stop(1, #3B8787)
+  );
+   background-image: linear-gradient(
+    linear,
+    right top,
+    left bottom,
+    color-stop(0.11, #CED0BF),
+    color-stop(1, #3B8787)
+  );
+   min-height: 1000px;
+
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+@-webkit-keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 0.2;}
+    100% {opacity: 1; }
+}
+@keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 0.2;}
+    100% {opacity: 1; }
+}
+@-webkit-keyframes shake {
+    0% {left:-5px;}
+    10% {left: 5px;}
+    20% {left:-5px;}
+    30% {left: 5px;}
+    40% {left:-5px;}
+    50% {left: 5px;}
+    60% {left:-5px;}
+    70% {left: 5px;}
+    80% {left:-5px;}
+    90% {left: 5px;}
+    100% {left: 0px;}
+}
+@keyframes shake {
+    0% {left:-5px;}
+    10% {left: 5px;}
+    20% {left:-5px;}
+    30% {left: 5px;}
+    40% {left:-5px;}
+    50% {left: 5px;}
+    60% {left:-5px;}
+    70% {left: 5px;}
+    80% {left:-5px;}
+    90% {left: 5px;}
+    100% {left: 0px;}
+}
+
+#link-form{
+  display: none;
+}
+
+#logout-form{
+  position: fixed;
+  bottom: 2%;
+}
+
+/*
+     CSS-Tricks Example
+     by Chris Coyier
+     http://css-tricks.com
+*/
+
+
+#page-wrap { width: 350px; margin: 0 auto;  }
+
+#well {
+
+    
+    background: grey;
+
+    
+    overflow: hidden; 
+    
+    -webkit-user-select: none;
+    text-align: left;
+}
+
+#well h2 {
+  background: -moz-linear-gradient(left, #B4B4B4, 0.4, #fff, 0.5, white, 0.6, #fff, #fff); 
+  background: -webkit-gradient(linear,left top,right top,color-stop(0, #B4B4B4),color-stop(0.4, #fff),color-stop(0.5, white),color-stop(0.6, #fff),color-stop(1, #fff)); 
+  
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  
+  -webkit-animation: slidetounlock 5s infinite;
+  
+  font-size: 25px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  
+  padding: 0;
+  width: 200%;
+  
+  -webkit-text-size-adjust: none;
+}
+#slider {
+    background: grey;
+    width: 65px;
+    height: 67px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+#slider img{
+    width: 65px;
+    height: 67px;
+}
+
+@-webkit-keyframes slidetounlock {
+    0% {
+        background-position: -250px 0;
+    }
+    100%{
+        background-position: 250px 0;
+    }
+}

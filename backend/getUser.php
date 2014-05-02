@@ -1,0 +1,1 @@
+<?php 	require_once("functions.php");	//Creation a nearby object		$nearby = new nearby();	//Checks if the user is logged in	//We're getting the info from app	$user = $_GET['username'];	//We're now going to fetch info on the suer	$nearby -> getUser($user);?>

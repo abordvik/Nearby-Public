@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  
+  <head>
+    <meta charset=utf-8>
+    <title>Nearby</title>
+    
+    <link rel="apple-touch-icon" href="img/nearby-logo-200.png"/>
+	<link rel="apple-touch-icon-precomposed" href="img/nearby-logo-200.png"/>
+	
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/functions.js"></script> 
+    <script src="js/jquery.form.js"></script> 
+    
+  
+	
+
+
+
+	</head>
+	<body>
+
+            <div class="friends">
+
+
+            </div>
+           
+            
+
+            
+    <div class="errorContainer"></div>
+    <div class="errorOverlay"></div>
+    <div class="completeContainer"></div>
+    <div class="errorMessage"></div>
+    <div class="nearbyInit">
+        <img src="img/nearby-logo-200.png"/>
+    </div>
+    
+
+    <div class="options">
+        <div class="option login"><h1>LOGIN</h1></div>
+        <div class="option-content login_content">
+            <div class="login"></div>
+            <div id="fredlogin"></div>
+            <form id="form" action="http://dev1.intelli.dk/backend/login.php" method="GET">
+                <input type="text" name="username" placeholder="Username"><br>
+                <input type="password" name="password" placeholder="password"><br>
+                <input  type="submit" name="submit" value="Login">
+
+            </form>
+        </div>
+        <div class="option register"><h1>REGISTER</h1></div>
+            <div class="option-content register_content">
+                <div class="register"></div>
+                <div id="fredregister"></div>
+                <form id="register-form" action="http://dev1.intelli.dk/backend/newUser.php" method="POST" enctype="multipart/form-data">
+                    <input type="text" name="username" placeholder="username"><br>
+                    <input type="password" name="password" placeholder="password"><br>
+                    <!-- <input type="tel" name="telephone" placeholder="telephone"><br>
+                    <input type="hidden" name="imgurl" value="null">-->
+                    <input type="submit" name="submit" value="Register"> 
+                </form> 
+               
+
+                <!--<form class="pic-form" enctype="multipart/form-data">
+                    <br><br><p class="fileCon">Select image</p>
+                    <input name="file" type="file" /><br>
+                    <input type="button" class="uploadButton" value="Upload" />
+                </form>-->
+                <progress class="process"></progress>
+
+                <div id="profile-container">
+            </div>
+        </div>
+
+            <div id="page-wrap">
+
+      
+            
+    </div>
+
+    </div>
+   
+
+        <div class="logout"></div>
+        <div id="fredlogout"></div>
+        <form id="logout-form" action="http://dev1.intelli.dk/backend/logout.php" method="POST">
+            <input type="submit" name="submit" value="Logout" style="z-index: 3;">
+
+        </form>
+        <div class="linkform"></div>
+        <form id="link-form" action="http://dev1.intelli.dk/backend/linkUsers.php" method="POST">
+            <input type="text" name="username" placeholder="Username of Friend">
+            <input type="hidden" name="token" value="null">
+            <input type="hidden" name="uid" value="null">
+            <input type="submit" name="submit" value="Link!">
+
+        </form>
+
+        
+ 
+    
+
+
+	</body>
+
+</html>
